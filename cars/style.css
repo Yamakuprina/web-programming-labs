@@ -117,10 +117,6 @@ a {
     overflow:hidden;
 }
 
-
-
-
-
 body{
     font-family: 'DM Sans', sans-serif;
     background-color: rgba(249, 249, 249, 1);
@@ -169,6 +165,7 @@ h3{
 }
 
 button{
+    user-select: none;
     font-family: 'DM Sans', sans-serif;
     font-size: 16px;
     color: rgba(255, 255, 255, 1);
