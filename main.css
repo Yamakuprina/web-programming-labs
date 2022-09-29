@@ -156,6 +156,7 @@ h1{
 
 .container-contents{
     padding: 16px 30px 38px 30px;
+    position: relative;
 }
 
 h3{
@@ -176,6 +177,14 @@ button{
     border: none;
 }
 
+.button-table-top-button-only{
+    right: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-right: 50px;
+}
+
 button:hover {
     color: white;
     box-shadow: 0 0 5px rgba(161, 98, 247, 1);
@@ -186,9 +195,16 @@ button:active{
     background-color: rgb(137, 85, 206);
 }
 
-.table-top{
+.table-top-with-text{
     justify-content: space-between;
     display: flex;
+}
+
+.table-top-button-only{
+    height: 52px;
+    position: absolute;
+    width: 100%;
+    max-width: inherit;
 }
 
 tr{
