@@ -63,7 +63,7 @@
                             <th>ФИО</th>
                             <th>Статус</th>
                             <div class="table-top-button-only">
-                                <button class="button-table-top-button-only">+ Добавить</button>
+                                <button class="open-popup button-table-top-button-only">+ Добавить</button>
                             </div>
                         </tr>
                         <tr>
@@ -95,5 +95,23 @@
         <h6>Designed by Tagir Faizullin in Vyazma</h6>
     </footer>
 </main>
+<div class="popup-background">
+    <form class="popup">
+
+        <div class="popup-title">
+            <img src="icons/close.png" class="close-popup">
+            <h3>Добавить водителя:</h3>
+        </div>
+
+        <div class="popup-content">
+            <label>
+                <input name="driver-name" placeholder="ФИО" required type="text">
+            </label>
+            <button type="submit" class="popup-submit-button">Отправить</button>
+        </div>
+
+    </form>
+</div>
+<script src="popup.js"></script>
 </body>
 </html>

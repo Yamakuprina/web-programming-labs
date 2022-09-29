@@ -66,7 +66,7 @@
                             <th>От</th>
                             <th>До</th>
                             <div class="table-top-button-only">
-                                <button class="button-table-top-button-only">+ Добавить</button>
+                                <button class="open-popup button-table-top-button-only">+ Добавить</button>
                             </div>
                         </tr>
                         <tr>
@@ -113,5 +113,29 @@
         <h6>Designed by Tagir Faizullin in Vyazma</h6>
     </footer>
 </main>
+<div class="popup-background">
+    <form class="popup">
+
+        <div class="popup-title">
+            <img src="icons/close.png" class="close-popup">
+            <h3>Добавить заказ:</h3>
+        </div>
+
+        <div class="popup-content">
+            <label>
+                <input name="order-phone-number" placeholder="Номер телефона" required type="text">
+            </label>
+            <label>
+                <input name="order-from" placeholder="Пункт отправления" required type="text">
+            </label>
+            <label>
+                <input name="order-to" placeholder="Пункт назначения" required type="text">
+            </label>
+            <button type="submit" class="popup-submit-button">Отправить</button>
+        </div>
+
+    </form>
+</div>
+<script src="popup.js"></script>
 </body>
 </html>

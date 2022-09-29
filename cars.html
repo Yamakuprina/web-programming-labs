@@ -90,7 +90,7 @@
                 <div class="container-contents">
                     <div class="table-top-with-text">
                         <h3>В гараже</h3>
-                        <button>+ Добавить</button>
+                        <button class="open-popup button-table-top-with-text">+ Добавить</button>
                     </div>
                     <table>
                         <tr>
@@ -126,5 +126,32 @@
         <h6>Designed by Tagir Faizullin in Vyazma</h6>
     </footer>
 </main>
+<div class="popup-background">
+    <form class="popup">
+
+        <div class="popup-title">
+            <img src="icons/close.png" class="close-popup">
+            <h3>Добавить машину:</h3>
+        </div>
+
+        <div class="popup-content">
+            <label>
+                <input name="car-brand" placeholder="Марка" required type="text">
+            </label>
+            <label>
+                <input name="car-model" placeholder="Модель" required type="text">
+            </label>
+            <label>
+                <input name="car-number" placeholder="Номер" required type="text">
+            </label>
+            <label>
+                <input name="car-color" placeholder="Цвет" required type="text">
+            </label>
+            <button type="submit" class="popup-submit-button">Отправить</button>
+        </div>
+
+    </form>
+</div>
+<script src="popup.js"></script>
 </body>
 </html>
