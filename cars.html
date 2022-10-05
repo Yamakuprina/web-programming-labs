@@ -70,29 +70,31 @@
                     <div class="table-top-with-text">
                         <h3>Активные</h3>
                     </div>
-                    <table>
-                        <tr>
-                            <th>Марка</th>
-                            <th>Модель</th>
-                            <th>Номер</th>
-                            <th>Цвет</th>
-                            <th>Водитель</th>
-                        </tr>
-                        <tr>
-                            <td>KIA</td>
-                            <td>Rio</td>
-                            <td>А228БА</td>
-                            <td>Белый</td>
-                            <td>Амжурбан Велилюй Зилюкбаевич</td>
-                        </tr>
-                        <tr>
-                            <td>Hyundai</td>
-                            <td>Solaris</td>
-                            <td>В777ОР</td>
-                            <td>Черный</td>
-                            <td>Умер Бабиджон Урюпович</td>
-                        </tr>
-                    </table>
+                    <div class="scrollable">
+                        <table>
+                            <tr>
+                                <th>Марка</th>
+                                <th>Модель</th>
+                                <th>Номер</th>
+                                <th>Цвет</th>
+                                <th>Водитель</th>
+                            </tr>
+                            <tr>
+                                <td>KIA</td>
+                                <td>Rio</td>
+                                <td>А228БА</td>
+                                <td>Белый</td>
+                                <td>Амжурбан Велилюй Зилюкбаевич</td>
+                            </tr>
+                            <tr>
+                                <td>Hyundai</td>
+                                <td>Solaris</td>
+                                <td>В777ОР</td>
+                                <td>Черный</td>
+                                <td>Умер Бабиджон Урюпович</td>
+                            </tr>
+                        </table>
+                    </div>
                 </div>
             </div>
             <div class="table-container">
@@ -101,32 +103,34 @@
                         <h3>В гараже</h3>
                         <button class="open-popup button-table-top-with-text">+ Добавить</button>
                     </div>
-                    <table>
-                        <tr>
-                            <th>Марка</th>
-                            <th>Модель</th>
-                            <th>Номер</th>
-                            <th>Цвет</th>
-                        </tr>
-                        <tr>
-                            <td>KIA</td>
-                            <td>Rio</td>
-                            <td>Б133ББ</td>
-                            <td>Серый</td>
-                        </tr>
-                        <tr>
-                            <td>Hyundai</td>
-                            <td>Solaris</td>
-                            <td>Ш666ШШ</td>
-                            <td>Белый</td>
-                        </tr>
-                        <tr>
-                            <td>Lada</td>
-                            <td>Vesta</td>
-                            <td>И999СС</td>
-                            <td>Серый</td>
-                        </tr>
-                    </table>
+                    <div class="scrollable">
+                        <table>
+                            <tr>
+                                <th>Марка</th>
+                                <th>Модель</th>
+                                <th>Номер</th>
+                                <th>Цвет</th>
+                            </tr>
+                            <tr>
+                                <td>KIA</td>
+                                <td>Rio</td>
+                                <td>Б133ББ</td>
+                                <td>Серый</td>
+                            </tr>
+                            <tr>
+                                <td>Hyundai</td>
+                                <td>Solaris</td>
+                                <td>Ш666ШШ</td>
+                                <td>Белый</td>
+                            </tr>
+                            <tr>
+                                <td>Lada</td>
+                                <td>Vesta</td>
+                                <td>И999СС</td>
+                                <td>Серый</td>
+                            </tr>
+                        </table>
+                    </div>
                 </div>
             </div>
         </div>
@@ -138,7 +142,7 @@
     <form class="popup">
 
         <div class="popup-title">
-            <img src="icons/close.png" class="close-popup">
+            <img class="close-popup" src="icons/close.png">
             <h3>Добавить машину:</h3>
         </div>
 
@@ -155,7 +159,7 @@
             <label>
                 <input name="car-color" placeholder="Цвет" required type="text">
             </label>
-            <button type="submit" class="popup-submit-button">Отправить</button>
+            <button class="popup-submit-button" type="submit">Отправить</button>
         </div>
 
     </form>
