@@ -1,13 +1,13 @@
 .side-nav{
     height:100vh;
+    min-height: 310px;
     max-width: 230px;
     position: fixed;
-    overflow: auto;
-    /*top:0;*/
-    /*left:0;*/
+    /*overflow: auto;*/
     z-index:3;
     background-color: rgba(255, 255, 255, 1);
     user-select: none;
+    overflow-y: auto;
 }
 
 /* On page resize*/
@@ -19,6 +19,7 @@
 
     .side-nav {
         max-width: 60px;
+        min-height: 250px;
     }
 
     b{
@@ -30,7 +31,7 @@
     }
 
     ul.side-nav-bottom{
-        margin-bottom: 10px;
+        margin-bottom: 20px;
     }
 
     .side-nav ul.side-nav-top li{
@@ -38,11 +39,16 @@
     }
 
     .side-nav ul.side-nav-bottom li{
-        padding-left: 13px;
+        margin-left: 15px;
+        margin-top: 5px;
     }
 
     .side-nav ul.side-nav-bottom li a{
-        padding-left: 10px;
+        padding-left: 8px;
+    }
+
+    .side-nav ul.side-nav-bottom li a.circ-image{
+        padding-left: 0;
     }
 
 
@@ -69,7 +75,6 @@
     margin: 0;
     bottom: 2%;
     position: absolute;
-    /*display: flex;*/
     align-items: center;
     overflow: hidden;
 }
@@ -92,7 +97,6 @@ b{
     background-repeat: no-repeat;
     background-position: left 15px center;
     background-size: auto 20px;
-    /*transition: all 0.15s linear;*/
     cursor: pointer;
     color: rgba(95, 97, 101, 1);
 }
@@ -131,37 +135,39 @@ b{
 }
 
 .side-nav-bottom li{
-    padding: 0.5em 0.5em 0.5em 2.9em;
+    height: 30px;
+    margin-left: 2.9em;
     font-size: 0.95em;
     font-weight: 500;
     background-repeat: no-repeat;
     background-position: left 15px center;
     background-size: auto 20px;
-    /*transition: all 0.15s linear;*/
     cursor: pointer;
     float: left;
     color: rgba(95, 97, 101, 1);
 }
 
-.side-nav-bottom li img{
+.side-nav-bottom li a{
     vertical-align:middle;
 }
 
 #car-icon {width:20px; height:20px; }
 #wheel-icon {width:20px; height:20px; }
 #orders-icon {width:20px; height:20px; }
-#ext-icon {width:18px; height:18px; }
+#ext-icon {width:16px; height:16px; }
 
 .side-nav-bottom a:hover{
     text-decoration: underline;
 }
 
-.circ-image{
-    width:35px;
-    height: 35px;
+.circ-image img{
+    width:30px;
+    height: 30px;
     border-radius:50%;
     overflow:hidden;
+    padding-top: 0;
 }
+
 
 html, body{
     font-family: 'DM Sans', sans-serif;
@@ -172,7 +178,6 @@ html, body{
 main{
     align-items: center;
     display: flex;
-    /*flex-direction: column;*/
     background-color: rgba(249, 249, 249, 1);
     height: 100%;
 
@@ -182,17 +187,14 @@ main{
     margin-left: 230px;
     height:100vh;
     position:relative;
-    /*display: flex;*/
-    /*flex-direction: column;*/
     width: 100%;
     background-color: rgba(249, 249, 249, 1);
 }
 
 .contents{
-    /*height: inherit;*/
     padding-left: 35px;
     padding-right: 60px;
-    /*margin-bottom: -75px;*/
+    padding-bottom: 10px;
 }
 
 h1{
@@ -235,15 +237,7 @@ button{
     border: none;
 }
 
-.open-popup.button-table-top-button-only{
-    right: 0;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    margin-right: 60px;
-}
-
-.open-popup.button-table-top-with-text{
+.open-popup.button-table-top{
     margin-top: 10px;
     margin-left: 5px;
 }
@@ -261,13 +255,6 @@ button:active{
 .table-top-with-text{
     justify-content: space-between;
     display: flex;
-}
-
-.table-top-button-only{
-    height: 52px;
-    position: absolute;
-    width: 100%;
-    max-width: inherit;
 }
 
 tr{
