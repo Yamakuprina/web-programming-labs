@@ -1,12 +1,52 @@
 .side-nav{
     height:100vh;
-    max-width: 248px;
-    position:relative;
-    top:0;
-    left:0;
+    max-width: 230px;
+    position: fixed;
+    overflow: auto;
+    /*top:0;*/
+    /*left:0;*/
     z-index:3;
     background-color: rgba(255, 255, 255, 1);
     user-select: none;
+}
+
+/* On page resize*/
+@media only screen and (max-width: 640px) {
+
+    body main div.display {
+        margin-left: 45px;
+    }
+
+    .side-nav {
+        max-width: 60px;
+    }
+
+    b{
+        display: none;
+    }
+
+    .logo{
+        display: none;
+    }
+
+    ul.side-nav-bottom{
+        margin-bottom: 10px;
+    }
+
+    .side-nav ul.side-nav-top li{
+        padding-left: 15px;
+    }
+
+    .side-nav ul.side-nav-bottom li{
+        padding-left: 13px;
+    }
+
+    .side-nav ul.side-nav-bottom li a{
+        padding-left: 10px;
+    }
+
+
+
 }
 
 .logo{
@@ -29,14 +69,20 @@
     margin: 0;
     bottom: 2%;
     position: absolute;
-    display: flex;
+    /*display: flex;*/
     align-items: center;
     overflow: hidden;
 }
 
 a {
+    height: 100%;
+    width: 100%;
     text-decoration: none;
     color: inherit;
+}
+
+b{
+    font-weight: 500;
 }
 
 .side-nav-top li {
@@ -46,7 +92,7 @@ a {
     background-repeat: no-repeat;
     background-position: left 15px center;
     background-size: auto 20px;
-    transition: all 0.15s linear;
+    /*transition: all 0.15s linear;*/
     cursor: pointer;
     color: rgba(95, 97, 101, 1);
 }
@@ -91,7 +137,7 @@ a {
     background-repeat: no-repeat;
     background-position: left 15px center;
     background-size: auto 20px;
-    transition: all 0.15s linear;
+    /*transition: all 0.15s linear;*/
     cursor: pointer;
     float: left;
     color: rgba(95, 97, 101, 1);
@@ -117,28 +163,36 @@ a {
     overflow:hidden;
 }
 
-body{
+html, body{
     font-family: 'DM Sans', sans-serif;
     background-color: rgba(249, 249, 249, 1);
     margin: 0;
+    height: 100%;
 }
 main{
     align-items: center;
     display: flex;
+    /*flex-direction: column;*/
     background-color: rgba(249, 249, 249, 1);
+    height: 100%;
 
 }
 
 .display{
+    margin-left: 230px;
     height:100vh;
     position:relative;
+    /*display: flex;*/
+    /*flex-direction: column;*/
     width: 100%;
     background-color: rgba(249, 249, 249, 1);
 }
 
 .contents{
+    /*height: inherit;*/
     padding-left: 35px;
     padding-right: 60px;
+    /*margin-bottom: -75px;*/
 }
 
 h1{
@@ -157,6 +211,7 @@ h1{
 .container-contents{
     padding: 16px 30px 38px 30px;
     position: relative;
+    overflow-x:auto;
 }
 
 h3{
@@ -229,16 +284,21 @@ th, td {
 
 footer {
     height: 75px;
-    position: absolute;
-    padding: 0;
+    /*min-height: 100%;*/
+    /*margin-bottom: -75px;*/
+    /*position: absolute;*/
+    /*padding: 0;*/
+    /*margin-top: -100px;*/
     margin-left: auto;
     margin-right: auto;
-    vertical-align: bottom;
+
     width: 100%;
-    bottom: 0;
+    /*bottom: 0;*/
 }
 
 h6{
+    vertical-align: bottom;
+    height: 100%;
     font-family: 'Outfit', sans-serif;
     color: rgba(0, 0, 0, 0.26);
     font-weight: 200;
