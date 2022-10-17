@@ -85,22 +85,3 @@ main {
 .btn-login:active{
     background-color: rgb(137, 85, 206);
 }
-
-footer {
-    height: 38px;
-    position: absolute;
-    padding: 0;
-    margin-left: auto;
-    margin-right: auto;
-    vertical-align: bottom;
-    width: 100%;
-    bottom: 0;
-}
-
-h6{
-    font-family: 'Outfit', sans-serif;
-    color: rgba(0, 0, 0, 0.26);
-    font-weight: 200;
-    font-size: 16px;
-    text-align: center;
-}
