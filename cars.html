@@ -102,7 +102,7 @@
                         <button class="open-popup button-table-top">+ Добавить</button>
                     </div>
                     <div class="scrollable">
-                        <table>
+                        <table class ="modifiable-table">
                             <tr>
                                 <th>Марка</th>
                                 <th>Модель</th>
@@ -137,7 +137,7 @@
 
 </main>
 <div class="popup-background">
-    <form class="popup">
+    <form class="popup" onsubmit="onAdd()">
 
         <div class="popup-title">
             <img class="close-popup" src="icons/close.png">
@@ -146,16 +146,16 @@
 
         <div class="popup-content">
             <label>
-                <input name="car-brand" placeholder="Марка" required type="text">
+                <input id="car-brand" placeholder="Марка" required type="text">
             </label>
             <label>
-                <input name="car-model" placeholder="Модель" required type="text">
+                <input id="car-model" placeholder="Модель" required type="text">
             </label>
             <label>
-                <input name="car-number" placeholder="Номер" required type="text">
+                <input id="car-number" placeholder="Номер" required type="text">
             </label>
             <label>
-                <input name="car-color" placeholder="Цвет" required type="text">
+                <input id="car-color" placeholder="Цвет" required type="text">
             </label>
             <button class="popup-submit-button" type="submit">Отправить</button>
         </div>
@@ -163,5 +163,6 @@
     </form>
 </div>
 <script src="popup.js"></script>
+<script src="cars-table.js"></script>
 </body>
 </html>
