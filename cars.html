@@ -6,87 +6,163 @@
     <meta content="такси, taxi, заказать, водители, машины" name="keywords">
     <meta content="Вкладка CRM-системы таксопарка, отображающая список активных и неактивных машин, их параметры, водителя"
           name="description">
+    <link href="main.css" rel="stylesheet">
 </head>
 <body>
-<div class="sidenav" id="sideNavigation">
-    <h2>Zelenoglazoe taxi</h2>
-    <a href="https://youtu.be/dQw4w9WgXcQ">Водители</a>
-    <a href="https://youtu.be/dQw4w9WgXcQ">Машины</a>
-    <a href="https://youtu.be/dQw4w9WgXcQ">Заказы</a>
-    <div id="sideNavigationBottom">
-        <a href="https://youtu.be/dQw4w9WgXcQ">Выйти</a>
-        <a href="https://youtu.be/dQw4w9WgXcQ">
-            <div class="circular_image">
-                <img alt="" src="http://placekitten.com/500/500"/>
+<main>
+    <div class="side-nav">
+
+        <ul class="side-nav-top">
+            <li><h2 class="logo">Zelenoglazoe taxi</h2></li>
+
+            <li>
+                <div class="link-container">
+                    <a href="index.html">
+                        <img alt="image error" id="wheel-icon" src="icons/steering-wheel.png">
+                        <b>Водители</b>
+                    </a>
+
+                </div>
+            </li>
+            <li>
+                <div class="selected">
+                    <div class="link-container">
+                        <a href="cars.html">
+                            <img alt="image error" id="car-icon" src="icons/car.png">
+                            <b>Машины</b>
+                        </a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="link-container">
+                    <a href="orders.html">
+                        <img alt="image error" id="orders-icon" src="icons/orders.png">
+                        <b>Заказы</b>
+                    </a>
+                </div>
+
+            </li>
+        </ul>
+
+        <ul class="side-nav-bottom">
+            <li>
+                <a href="login.html">
+                    <img alt="image error" id="ext-icon" src="icons/exit.png">
+                    <b>Выйти</b>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="circ-image">
+                    <img alt="" src="http://placekitten.com/50/50"/>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="display">
+
+        <div class="contents">
+            <h1>Машины</h1>
+            <div class="table-container">
+                <div class="container-contents">
+                    <div class="table-top-with-text">
+                        <h3>Активные</h3>
+                    </div>
+                    <div class="scrollable">
+                        <table>
+                            <tr>
+                                <th>Марка</th>
+                                <th>Модель</th>
+                                <th>Номер</th>
+                                <th>Цвет</th>
+                                <th>Водитель</th>
+                            </tr>
+                            <tr>
+                                <td>KIA</td>
+                                <td>Rio</td>
+                                <td>А228БА</td>
+                                <td>Белый</td>
+                                <td>Амжурбан Велилюй Зилюкбаевич</td>
+                            </tr>
+                            <tr>
+                                <td>Hyundai</td>
+                                <td>Solaris</td>
+                                <td>В777ОР</td>
+                                <td>Черный</td>
+                                <td>Умер Бабиджон Урюпович</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
             </div>
-        </a>
+            <div class="table-container">
+                <div class="container-contents">
+                    <div class="table-top-with-text">
+                        <h3>В гараже</h3>
+                        <button class="open-popup button-table-top">+ Добавить</button>
+                    </div>
+                    <div class="scrollable">
+                        <table class ="modifiable-table">
+                            <tr>
+                                <th>Марка</th>
+                                <th>Модель</th>
+                                <th>Номер</th>
+                                <th>Цвет</th>
+                            </tr>
+                            <tr>
+                                <td>KIA</td>
+                                <td>Rio</td>
+                                <td>Б133ББ</td>
+                                <td>Серый</td>
+                            </tr>
+                            <tr>
+                                <td>Hyundai</td>
+                                <td>Solaris</td>
+                                <td>Ш666ШШ</td>
+                                <td>Белый</td>
+                            </tr>
+                            <tr>
+                                <td>Lada</td>
+                                <td>Vesta</td>
+                                <td>И999СС</td>
+                                <td>Серый</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
 
+</main>
+<div class="popup-background">
+    <form class="popup" onsubmit="onAdd()">
+
+        <div class="popup-title">
+            <img class="close-popup" src="icons/close.png">
+            <h3>Добавить машину:</h3>
+        </div>
+
+        <div class="popup-content">
+            <label>
+                <input id="car-brand" placeholder="Марка" required type="text">
+            </label>
+            <label>
+                <input id="car-model" placeholder="Модель" required type="text">
+            </label>
+            <label>
+                <input id="car-number" placeholder="Номер" required type="text">
+            </label>
+            <label>
+                <input id="car-color" placeholder="Цвет" required type="text">
+            </label>
+            <button class="popup-submit-button" type="submit">Отправить</button>
+        </div>
+
+    </form>
 </div>
-<div id="main">
-    <h1>Машины</h1>
-    <table>
-        <tr>
-            <th><h3>Активные</h3></th>
-        </tr>
-
-        <tr>
-            <th>Марка</th>
-            <th>Модель</th>
-            <th>Номер</th>
-            <th>Цвет</th>
-            <th>Водитель</th>
-        </tr>
-        <tr>
-            <td>KIA</td>
-            <td>Rio</td>
-            <td>А228БА</td>
-            <td>Белый</td>
-            <td>Амжурбан Велилюй Зилюкбаевич</td>
-        </tr>
-        <tr>
-            <td>Hyundai</td>
-            <td>Solaris</td>
-            <td>В777ОР</td>
-            <td>Черный</td>
-            <td>Умер Бабиджон Урюпович</td>
-        </tr>
-    </table>
-
-    <table>
-        <tr>
-            <th><h3>В гараже</h3></th>
-            <th>
-                <button>+Добавить</button>
-            </th>
-        </tr>
-
-        <tr>
-            <th>Марка</th>
-            <th>Модель</th>
-            <th>Номер</th>
-            <th>Цвет</th>
-        </tr>
-        <tr>
-            <td>KIA</td>
-            <td>Rio</td>
-            <td>Б133ББ</td>
-            <td>Серый</td>
-        </tr>
-        <tr>
-            <td>Hyundai</td>
-            <td>Solaris</td>
-            <td>Ш666ШШ</td>
-            <td>Белый</td>
-        </tr>
-        <tr>
-            <td>Lada</td>
-            <td>Vesta</td>
-            <td>И999СС</td>
-            <td>Серый</td>
-        </tr>
-    </table>
-    <h6>Designed by Tagir Faizullin in Vyazma</h6>
-</div>
+<script src="popup.js"></script>
+<script src="cars-table.js"></script>
 </body>
 </html>
