@@ -124,8 +124,18 @@ b{
 }
 
 .link-container img{
+    vertical-align: middle;
+    padding-top: 5px;
     padding-right: 8px;
     padding-left: 4px;
+}
+
+.link-container a{
+    vertical-align: middle;
+}
+
+.link-container b{
+    vertical-align: sub;
 }
 
 .link-container:hover{
@@ -164,14 +174,19 @@ b{
     vertical-align:middle;
 }
 
+.side-nav-bottom li a img{
+    vertical-align: middle;
+}
+
+.side-nav-bottom li a b{
+    vertical-align: middle;
+    margin-left: 4px;
+}
+
 #car-icon {width:20px; height:20px; }
 #wheel-icon {width:20px; height:20px; }
 #orders-icon {width:20px; height:20px; }
 #ext-icon {width:16px; height:16px; }
-
-.side-nav-bottom a:hover{
-    text-decoration: underline;
-}
 
 .circ-image img{
     width:30px;
