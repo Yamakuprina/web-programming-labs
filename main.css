@@ -62,6 +62,10 @@
     button.button-table-top{
         width: 40px;
     }
+
+    .popup.active{
+        width: 70vw;
+    }
 }
 
 .logo{
@@ -294,13 +298,13 @@ th, td {
     background: rgba(0,0,0,0.5);
     opacity: 0;
     pointer-events: none;
-    transition: 0.5s all;
+    transition: 0.3s all;
 }
 
 .popup-background.active {
     opacity: 1;
     pointer-events: all;
-    transition: 0.5s all;
+    transition: 0.3s all;
 }
 
 .popup {
@@ -312,12 +316,12 @@ th, td {
     border-radius: 20px;
     width: 400px;
     padding: 20px 20px 30px;
-    transition: 0.5s all;
+    transition: 0.3s all;
 }
 
 .popup.active {
     transform: translate(-50%, -50%) scale(1);
-    transition: 0.5s all;
+    transition: 0.3s all;
 }
 
 .popup-title{
