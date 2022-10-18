@@ -50,6 +50,18 @@
     .side-nav ul.side-nav-bottom li a.circ-image{
         padding-left: 0;
     }
+
+    .button-table-top span{
+        display: none;
+    }
+
+    .button-table-top:after{
+        content: "+";
+    }
+
+    button.button-table-top{
+        width: 40px;
+    }
 }
 
 .logo{
