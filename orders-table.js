@@ -13,14 +13,14 @@ form.addEventListener('submit',(e) => {
     let from = fromInput.value;
     let to = toInput.value;
     let template = `
-                <tr>
                     <td>${number}</td>
                     <td>${status}</td>
                     <td>${driver}</td>
                     <td>${from}</td>
-                    <td>${to}</td>
-                </tr>`;
-    ordersTable.innerHTML += template;
+                    <td>${to}</td>`;
+
+    let row = ordersTable.insertRow(1);
+    row.innerHTML = template;
     closePopup();
 });
 
