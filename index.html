@@ -68,7 +68,9 @@
                 <div class="container-contents">
                     <div class="table-top-with-text">
                         <h3>В этом районе</h3>
-                        <button class="open-popup button-table-top">+ Добавить</button>
+                        <button class="open-popup button-table-top">
+                            <span>+ Добавить</span>
+                        </button>
                     </div>
                     <div class="scrollable">
                         <table class ="modifiable-table">
@@ -114,7 +116,7 @@
 
         <div class="popup-content">
             <label>
-                <input name="driver-name" placeholder="ФИО" required type="text">
+                <input id="driver-name" placeholder="ФИО" required type="text">
             </label>
             <button class="popup-submit-button" type="submit">Отправить</button>
         </div>
@@ -122,5 +124,6 @@
     </form>
 </div>
 <script src="popup.js"></script>
+<script src="drivers-table.js"></script>
 </body>
 </html>

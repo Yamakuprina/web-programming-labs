@@ -50,6 +50,22 @@
     .side-nav ul.side-nav-bottom li a.circ-image{
         padding-left: 0;
     }
+
+    .button-table-top span{
+        display: none;
+    }
+
+    .button-table-top:after{
+        content: "+";
+    }
+
+    button.button-table-top{
+        width: 40px;
+    }
+
+    .popup.active{
+        width: 70vw;
+    }
 }
 
 .logo{
@@ -108,8 +124,18 @@ b{
 }
 
 .link-container img{
+    vertical-align: middle;
+    padding-top: 5px;
     padding-right: 8px;
     padding-left: 4px;
+}
+
+.link-container a{
+    vertical-align: middle;
+}
+
+.link-container b{
+    vertical-align: sub;
 }
 
 .link-container:hover{
@@ -148,14 +174,19 @@ b{
     vertical-align:middle;
 }
 
+.side-nav-bottom li a img{
+    vertical-align: middle;
+}
+
+.side-nav-bottom li a b{
+    vertical-align: middle;
+    margin-left: 4px;
+}
+
 #car-icon {width:20px; height:20px; }
 #wheel-icon {width:20px; height:20px; }
 #orders-icon {width:20px; height:20px; }
 #ext-icon {width:16px; height:16px; }
-
-.side-nav-bottom a:hover{
-    text-decoration: underline;
-}
 
 .circ-image img{
     width:30px;
@@ -282,13 +313,13 @@ th, td {
     background: rgba(0,0,0,0.5);
     opacity: 0;
     pointer-events: none;
-    transition: 0.5s all;
+    transition: 0.3s all;
 }
 
 .popup-background.active {
     opacity: 1;
     pointer-events: all;
-    transition: 0.5s all;
+    transition: 0.3s all;
 }
 
 .popup {
@@ -300,12 +331,12 @@ th, td {
     border-radius: 20px;
     width: 400px;
     padding: 20px 20px 30px;
-    transition: 0.5s all;
+    transition: 0.3s all;
 }
 
 .popup.active {
     transform: translate(-50%, -50%) scale(1);
-    transition: 0.5s all;
+    transition: 0.3s all;
 }
 
 .popup-title{
