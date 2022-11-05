@@ -300,7 +300,15 @@ th, td {
     text-align: left;
 }
 
+td.map-table-cell {
+    border-top: none;
+}
 
+.map{
+    height: 300px;
+    width: inherit;
+    background-color: #333;
+}
 
 
 .popup-background {
