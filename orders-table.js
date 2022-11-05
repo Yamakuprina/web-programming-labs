@@ -4,6 +4,7 @@ let ordersTable = document.querySelector('.modifiable-table');
 let phoneNumberInput = document.querySelector('#order-phone-number');
 let fromInput = document.querySelector('#order-from');
 let toInput = document.querySelector('#order-to');
+var mapNumber = 3
 
 form.addEventListener('submit',(e) => {
     e.preventDefault();
@@ -16,12 +17,21 @@ form.addEventListener('submit',(e) => {
                     <td>${number}</td>
                     <td>${status}</td>
                     <td>${driver}</td>
-                    <td>${from}</td>
-                    <td>${to}</td>`;
+                    <td class="from">${from}</td>
+                    <td class="to">${to}</td>`;
+
+    let mapTemplate = `
+                    <td colspan = 5 class="map-table-cell">
+                        <div class="map" id=${("map"+mapNumber++)}></div>
+                    </td>`;
 
     let row = ordersTable.insertRow(1);
+    let mapRow = ordersTable.insertRow(2);
+
     row.innerHTML = template;
+    mapRow.innerHTML = mapTemplate;
     closePopup();
+    drawMaps();
 });
 
 function closePopup(){
