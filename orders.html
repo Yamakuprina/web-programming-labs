@@ -7,6 +7,7 @@
     <meta content="Вкладка CRM-системы таксопарка, отображающая список заказов, их статус и назначенные машины"
           name="description">
     <link href="main.css" rel="stylesheet">
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=1a593698-b949-486c-ba44-e5818f4bf988&lang=ru_RU"></script>
 </head>
 <body>
 <main>
@@ -87,15 +88,25 @@
                                 <td>+79243043794</td>
                                 <td>Ожидает</td>
                                 <td>Амжурбан Велилюй Зилюкбаевич</td>
-                                <td>Вяземский пер. 5/7</td>
-                                <td>Кронверский просп. 49</td>
+                                <td class="from">Вяземский пер. 5/7</td>
+                                <td class="to">Кронверский просп. 49</td>
+                            </tr>
+                            <tr>
+                                <td colspan = 5 class="map-table-cell">
+                                    <div class="map" id="map2"></div>
+                                </td>
                             </tr>
                             <tr>
                                 <td>+79678260885</td>
                                 <td>В пути</td>
                                 <td>Умер Бабиджон Урюпович</td>
-                                <td>Садовая ул. 120</td>
-                                <td>наб. реки Фонтанки 96</td>
+                                <td class="from">Садовая ул. 120</td>
+                                <td class="to">наб. реки Фонтанки 96</td>
+                            </tr>
+                            <tr>
+                                <td colspan = 5 class="map-table-cell">
+                                    <div class="map" id="map1"></div>
+                                </td>
                             </tr>
                             <tr>
                                 <td>+79646820682</td>
@@ -124,7 +135,7 @@
             </div>
         </div>
     </div>
-
+    <script src="yandex-map.js"></script>
 </main>
 <div class="popup-background">
     <form class="popup">
